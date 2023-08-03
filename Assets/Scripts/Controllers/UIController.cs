@@ -27,6 +27,7 @@ public class UIController : MonoBehaviour
     private void OnStartButtonClicked()
     {
         _scoreUI.Show();
+
         _startButton.interactable = false;
         _startButton.gameObject.SetActive(false);
 
@@ -37,6 +38,7 @@ public class UIController : MonoBehaviour
     {
         _scoreUI.Hide();
         _scoreUI.ResetScore();
+
         _startButton.interactable = true;
         _startButton.gameObject.SetActive(true);
     }

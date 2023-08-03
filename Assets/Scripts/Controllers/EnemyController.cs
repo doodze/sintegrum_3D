@@ -16,9 +16,9 @@ public class EnemyController : MonoBehaviour
     private void Awake()
     {
         GameController.Instance.SetEnemyController(this);
-        GameController.Instance.GameStarted += OnGameStarted;
+        GameController.Instance.GameStarted += OnGameStarted;        
 
-        _enemyPool = new ObjectPool<Enemy>(CreateEnemy, OnGetEnemy, OnReleaseEnemy);        
+        _enemyPool = new ObjectPool<Enemy>(CreateEnemy, OnGetEnemy, OnReleaseEnemy, collectionCheck: true);        
     }
 
     private Enemy CreateEnemy()

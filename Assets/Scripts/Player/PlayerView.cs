@@ -47,4 +47,9 @@ public class PlayerView : MonoBehaviour
             .SetEase(Ease.Flash)
             .OnComplete(() => transform.DOScale(defaultScale, _scaleDuration));
     }
+
+    private void OnDestroy()
+    {
+        _material.color = _defaultPlayerColor;
+    }
 }

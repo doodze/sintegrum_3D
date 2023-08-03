@@ -38,5 +38,6 @@ public class ScoreUI : MonoBehaviour
     public void ResetScore()
     {
         _score = 0;
+        _scoreText.text = "";
     }
 }
