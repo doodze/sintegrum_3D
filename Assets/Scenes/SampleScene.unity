@@ -725,7 +725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 3419090470349722751, guid: 8a71bf9b2eb4c1d48ab5447c9c951e1d, type: 3}
-  _enemyCount: 20
+  _enemyCount: 15
   _enemyList: []
   _startPoint: 20
   _spawnStep: 20
