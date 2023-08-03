@@ -9,9 +9,8 @@ public class GameController : MonoSingleton<GameController>
     public event Action GameEnded;
 
     public PlayerController PlayerController { get; private set; }
-    public EnemyController EnemyController { get; private set; }
+    public EnemyController EnemyController { get; private set; }    
     public UIController UIController { get; private set; }
-
 
     public void SetPlayerController(PlayerController playerController)
     {
@@ -41,7 +40,7 @@ public class GameController : MonoSingleton<GameController>
     private void ResetControllers()
     {
         PlayerController = null;
-        EnemyController = null;
+        EnemyController = null;        
         UIController = null;
     }
 
